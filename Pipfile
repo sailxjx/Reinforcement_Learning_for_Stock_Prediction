@@ -1,0 +1,13 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.douban.com/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+keras = {index = "https://pypi.douban.com/simple", version = "*"}
+tensorflow = {index = "https://pypi.douban.com/simple", version = "*"}
+
+[requires]
+python_version = "3.8"

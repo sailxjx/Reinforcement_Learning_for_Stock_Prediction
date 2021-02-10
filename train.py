@@ -48,6 +48,7 @@ for e in range(episode_count + 1):
 
 		if len(agent.memory) > batch_size:
 			agent.expReplay(batch_size)
+			agent.memory.clear()
 
 	if e % 10 == 0:
 		agent.model.save("models/model_ep" + str(e))
